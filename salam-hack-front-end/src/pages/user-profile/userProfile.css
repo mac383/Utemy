@@ -1,0 +1,347 @@
+/* استخدام متغيرات CSS الموجودة من ai.css */
+
+/* ===== الإعدادات العامة ===== */
+.rtl {
+  direction: rtl;
+  text-align: right;
+}
+
+.user-profile-page {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* ===== رأس الملف الشخصي ===== */
+.user-profile-container {
+  box-shadow: var(--shadow);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.profile-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 32px 20px;
+  background: linear-gradient(to bottom, var(--primary-light), rgba(255, 255, 255, 0));
+  position: relative;
+  text-align: center;
+}
+
+.profile-avatar-container {
+  margin-bottom: 16px;
+}
+
+.profile-avatar {
+  border: 3px solid #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.profile-avatar:hover {
+  transform: scale(1.05);
+}
+
+.profile-basic-info {
+  transition: all 0.3s ease;
+}
+
+.profile-name {
+  margin-bottom: 4px !important;
+  color: var(--primary-text-color);
+}
+
+.profile-username {
+  display: block;
+  color: var(--secondary-text-color);
+  margin-bottom: 16px;
+}
+
+.profile-badges {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.profile-badge {
+  padding: 4px 12px;
+  border-radius: 16px;
+  font-size: 12px;
+}
+
+/* ===== علامات التبويب ===== */
+.profile-tabs {
+  margin-top: 16px;
+}
+
+.profile-tabs .ant-tabs-nav {
+  margin-bottom: 24px;
+}
+
+.tab-item {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.tab-icon {
+  margin-left: 8px;
+  font-size: 16px;
+}
+
+.ant-tabs-tab.ant-tabs-tab-active .tab-item {
+  color: var(--primary-color);
+}
+
+.ant-tabs-ink-bar {
+  background: var(--primary-color);
+  height: 3px;
+}
+
+/* ===== بطاقة المعلومات ===== */
+.user-info-card {
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background-color: var(--card-bg);
+}
+
+.info-item {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.info-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.info-label {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: var(--primary-text-color);
+  margin-bottom: 8px;
+}
+
+.info-icon {
+  margin-left: 8px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+
+.info-value {
+  color: var(--secondary-text-color);
+  padding-right: 24px;
+}
+
+.field-tag {
+  margin-bottom: 8px;
+  padding: 4px 10px;
+  border-radius: 16px;
+  font-weight: 500;
+  transition: all 0.2s ease;
+}
+
+.field-tag:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* ===== نموذج التعديل ===== */
+.edit-form-card {
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background-color: var(--card-bg);
+}
+
+.coming-soon-notice {
+  display: flex;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: rgba(var(--primary-color-rgb), 0.05);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.notice-icon {
+  margin-left: 8px;
+  color: var(--warning-color);
+  font-size: 16px;
+}
+
+.edit-form .ant-form-item-label {
+  font-weight: 500;
+}
+
+.edit-form .ant-input {
+  padding: 10px 12px;
+  border-radius: 6px;
+}
+
+.edit-form .ant-input:disabled, 
+.edit-form .ant-input[disabled] {
+  cursor: not-allowed;
+  opacity: 0.7;
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+}
+
+.fields-section {
+  padding: 16px;
+  background-color: rgba(0, 0, 0, 0.01);
+  border-radius: 6px;
+  margin-bottom: 20px;
+}
+
+.fields-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.action-button {
+  display: flex;
+  align-items: center;
+  padding: 6px 16px;
+  height: auto;
+}
+
+.button-icon {
+  margin-left: 8px;
+}
+
+.save-button {
+  margin-top: 16px;
+  height: 40px;
+  font-weight: 500;
+}
+
+/* ===== قسم الأمان ===== */
+.security-card {
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background-color: var(--card-bg);
+}
+
+.security-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.security-icon-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.security-icon {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+.security-title {
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+}
+
+.security-text {
+  margin-bottom: 24px;
+  color: var(--secondary-text-color);
+}
+
+.security-actions {
+  display: flex;
+  gap: 16px;
+  margin-top: 24px;
+}
+
+/* ===== سجل النشاط ===== */
+.activity-card {
+  border-radius: 8px;
+  margin-bottom: 24px;
+  background-color: var(--card-bg);
+}
+
+.activity-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 24px;
+  text-align: center;
+}
+
+.activity-icon-container {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background-color: var(--primary-light);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 16px;
+}
+
+.activity-icon {
+  font-size: 32px;
+  color: var(--primary-color);
+}
+
+.activity-title {
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+}
+
+.activity-text {
+  margin-bottom: 24px;
+  color: var(--secondary-text-color);
+}
+
+/* ===== التصميم المستجيب ===== */
+@media (min-width: 768px) {
+  .profile-header {
+    flex-direction: row;
+    text-align: right;
+    padding: 32px;
+  }
+  
+  .profile-avatar-container {
+    margin-left: 24px;
+    margin-bottom: 0;
+  }
+  
+  .profile-badges {
+    justify-content: flex-start;
+  }
+  
+  .security-container,
+  .activity-container {
+    text-align: right;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 767px) {
+  .security-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+  
+  .security-actions .ant-btn {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+}

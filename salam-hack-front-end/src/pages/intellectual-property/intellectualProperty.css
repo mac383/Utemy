@@ -1,0 +1,130 @@
+.ip-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: var(--bg-color);
+  direction: rtl;
+  font-family: "Arial", sans-serif;
+  color: var(--primary-text-color);
+}
+
+.ip-container .ip-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.ip-container .ip-header h1 {
+  color: var(--primary-text-color);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.ip-container .ip-last-updated {
+  color: var(--secondary-text-color);
+  font-size: 0.9rem;
+}
+
+.ip-container .ip-content {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+}
+
+.ip-container .ip-intro {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--divider-color);
+  font-size: 1.1rem;
+  line-height: 1.7;
+}
+
+.ip-container .ip-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.ip-container .ip-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.ip-container .ip-section h2 {
+  color: var(--primary-color);
+  font-size: 1.4rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.ip-container .ip-content-block {
+  padding-right: 10px;
+}
+
+.ip-container .ip-content-block p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: var(--primary-text-color);
+}
+
+.ip-container .ip-list {
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+
+.ip-container .ip-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  position: relative;
+  padding-right: 18px;
+}
+
+.ip-container .ip-list li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+
+.ip-container .ip-highlight {
+  color: var(--secondary-color);
+  font-weight: 600;
+}
+
+.ip-container .ip-contact-info {
+  background-color: var(--primary-light);
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.ip-container .ip-contact-info p {
+  margin-bottom: 5px;
+}
+
+.ip-container .ip-contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .ip-container .ip-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .ip-container .ip-section h2 {
+    font-size: 1.2rem;
+  }
+
+  .ip-container .ip-content {
+    padding: 20px;
+  }
+
+  .ip-container .ip-agreement {
+    padding: 15px;
+  }
+}

@@ -1,0 +1,102 @@
+.chat-page-component {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 15px;
+  overflow-y: auto;
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.chat-page-component .messages-container {
+  max-width: 800px;
+  width: 100%;
+  flex: 1;
+  padding: 16px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
+  justify-content: start;
+  scroll-behavior: smooth;
+  position: relative;
+}
+
+.chat-page-component .messages-container .scroll-icon-container {
+  width: 40px;
+  min-height: 40px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: sticky;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 5;
+  background-color: var(--bg-color);
+  border: 1px solid var(--border-color);
+  cursor: pointer;
+  box-shadow: var(--shadow);
+}
+
+.chat-page-component .input-container {
+  width: 100%;
+  max-width: 700px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 10px;
+  border: 2px solid var(--border-color);
+  border-radius: 10px;
+  position: sticky;
+}
+
+.chat-page-component .limit-message-container {
+  width: 100%;
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.chat-page-component .note {
+  font-size: 14px;
+  color: var(--secondary-text-color);
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.chat-page-component .note-highlight {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 750px) {
+  .chat-page-component .messages-container {
+    padding: 10px;
+    gap: 10px;
+  }
+
+  .chat-page-component .input-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 901px) {
+  .chat-page-component .messages-container {
+    max-width: 850px;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .chat-page-component .input-container {
+    width: 100%;
+    max-width: 850px;
+  }
+}

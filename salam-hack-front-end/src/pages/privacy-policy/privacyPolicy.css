@@ -1,0 +1,125 @@
+/* privacyPolicy.css */
+.privacy-container {
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  background-color: var(--bg-color);
+  direction: rtl;
+  font-family: "Arial", sans-serif;
+  color: var(--primary-text-color);
+}
+
+.privacy-container .privacy-header {
+  text-align: center;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.privacy-container .privacy-header h1 {
+  color: var(--primary-text-color);
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.privacy-container .last-updated {
+  color: var(--secondary-text-color);
+  font-size: 0.9rem;
+}
+
+.privacy-container .privacy-content {
+  background-color: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: var(--shadow);
+  margin-bottom: 30px;
+}
+
+.privacy-container .privacy-section {
+  margin-bottom: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.privacy-container .privacy-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.privacy-container .privacy-section h2 {
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+.privacy-container .privacy-section p {
+  line-height: 1.7;
+  margin-bottom: 15px;
+  color: var(--primary-text-color);
+}
+
+.privacy-container .privacy-list {
+  padding-right: 20px;
+  margin-bottom: 15px;
+}
+
+.privacy-container .privacy-list li {
+  margin-bottom: 10px;
+  line-height: 1.6;
+  position: relative;
+  padding-right: 18px;
+}
+
+.privacy-container .privacy-list li::before {
+  content: "•";
+  color: var(--primary-color);
+  position: absolute;
+  right: 0;
+  font-weight: bold;
+}
+
+.privacy-container .list-title {
+  font-weight: 600;
+  color: var(--primary-text-color);
+}
+
+.privacy-container .contact-info {
+  background-color: var(--primary-light);
+  padding: 15px 20px;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+.privacy-container .contact-info p {
+  margin-bottom: 5px;
+}
+
+.privacy-container .contact-info p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+  .privacy-container .privacy-header h1 {
+    font-size: 1.8rem;
+  }
+
+  .privacy-container .privacy-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .privacy-container .privacy-content {
+    padding: 20px;
+  }
+
+  .privacy-container .privacy-footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .privacy-container .privacy-btn {
+    width: 100%;
+    max-width: 300px;
+  }
+}

@@ -1,0 +1,69 @@
+.registration-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+  padding: 20px;
+}
+
+.registration-container .registration-card {
+  background-color: var(--card-bg);
+  width: 100%;
+  max-width: 700px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.registration-container .registration-title {
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--primary-color);
+  font-size: 24px;
+}
+
+.registration-container .registration-steps {
+  margin-bottom: 40px;
+}
+
+.registration-container .steps-content {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding: 20px;
+  background-color: #fafafa;
+  border: 1px dashed #e9e9e9;
+  border-radius: 8px;
+}
+
+.registration-container .steps-action {
+  margin-top: 24px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.registration-container .verification-info {
+  text-align: center;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #e6f7ff;
+  border-radius: 4px;
+}
+
+.registration-container .info {
+  color: var(--info-color);
+}
+
+.registration-container .code {
+  color: var(--success-color);
+}
+
+/* تخصيص اتجاه الصفحة للغة العربية */
+.registration-container .registration-container {
+  direction: rtl;
+  text-align: right;
+}
+
+/* جعل أزرار العودة والتقدم متناسقة */
+.registration-container .steps-action button {
+  min-width: 80px;
+}

@@ -1,0 +1,219 @@
+.system-message-component {
+  width: 100%;
+  height: fit-content;
+  padding: 25px 25px 10px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-rows: auto 30px;
+  gap: 15px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  font-weight: 500;
+}
+
+.system-message-component.init {
+  grid-template-rows: auto;
+  padding-bottom: 25px;
+  margin-top: 50px;
+}
+
+.system-message-component .content {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50px 10fr;
+  gap: 25px;
+}
+
+.system-message-component .img-container {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+  gap: 10px;
+}
+
+.system-message-component .img-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+  /* background-color: var(--secondary-color); */
+  background-color: white;
+}
+
+.system-message-component .img-container .dhafer-name {
+  display: none;
+}
+
+.system-message-component .response-content {
+  flex: 1;
+  padding: 10px;
+  border-radius: 10px;
+  color: var(--primary-text-color);
+  word-wrap: break-word;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  overflow-wrap: break-word;
+  max-width: 100%;
+}
+
+.system-message-component .response-content .formatted-heading {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.system-message-component .response-content h2.formatted-heading {
+  font-size: 1.5rem;
+}
+
+.system-message-component .response-content h3.formatted-heading {
+  font-size: 1.25rem;
+}
+
+.system-message-component .response-content h4.formatted-heading {
+  font-size: 1.125rem;
+}
+
+.system-message-component .response-content .math-block,
+.math-inline {
+  background-color: var(--card-bg);
+  padding: 10px;
+  border-radius: 8px;
+  border: 2px solid var(--border-color);
+  margin: 10px 0;
+  direction: ltr;
+  margin: 5px;
+  word-wrap: break-word;
+}
+
+.system-message-component .response-content .math-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: auto;
+  word-wrap: break-word;
+  flex-wrap: wrap;
+}
+
+.system-message-component .response-content .math-inline {
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 2px 6px;
+  word-wrap: break-word;
+}
+
+.system-message-component .response-content .code-block {
+  background-color: var(--card-bg);
+  color: var(--primary-text-color);
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  overflow-x: auto;
+  margin: 10px 0;
+  line-height: 1.5;
+  direction: ltr;
+  font-family: monospace;
+}
+
+.system-message-component .response-content .quoted-text {
+  padding: 4px;
+  border-radius: 5px;
+  direction: ltr;
+  border: 1px solid var(--border-color);
+  color: var(--primary-text-color);
+  background-color: var(--card-bg);
+  font-style: italic;
+  display: inline-block;
+  margin: 5px;
+}
+
+.system-message-component .footer {
+  display: flex;
+  align-items: center;
+  padding: 8px 16px;
+}
+
+.system-message-component .footer.hide {
+  display: none;
+}
+
+.system-message-component .footer p {
+  font-size: 14px;
+  cursor: pointer;
+  margin: 0;
+  transition: color 0.2s ease;
+}
+
+.system-message-component .footer p:hover {
+  color: var(--secondary-color);
+}
+
+@media (max-width: 750px) {
+  .system-message-component {
+    padding: 15px 15px 5px;
+    gap: 10px;
+  }
+
+  .system-message-component.init {
+    padding-bottom: 15px;
+  }
+
+  .system-message-component .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .system-message-component .img-container {
+    align-items: center;
+  }
+
+  .system-message-component .img-container .dhafer-name {
+    display: block;
+  }
+
+  .system-message-component .response-content {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .system-message-component .response-content .math-block {
+    max-width: 100%;
+    margin: 5px;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: auto;
+  }
+
+  .system-message-component .response-content h2.formatted-heading {
+    font-size: 1.25rem;
+  }
+
+  .system-message-component .response-content h3.formatted-heading {
+    font-size: 1.125rem;
+  }
+
+  .system-message-component .response-content h4.formatted-heading {
+    font-size: 1rem;
+  }
+
+  .system-message-component .response-content .math-block,
+  .math-inline {
+    font-size: 1rem;
+  }
+
+  .system-message-component .response-content .code-block {
+    font-size: 0.9rem;
+  }
+}
+
+@media (min-width: 901px) {
+}

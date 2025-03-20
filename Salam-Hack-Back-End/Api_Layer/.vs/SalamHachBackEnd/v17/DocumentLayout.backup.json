@@ -1,0 +1,69 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\LearnWeb\\ProjectUtemy\\salam-hack-back-end\\Salam-Hack-Back-End\\Api_Layer\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{22E353BC-1852-4905-839C-FFD13F2A7652}|Api_Layer.csproj|e:\\learnweb\\projectutemy\\salam-hack-back-end\\salam-hack-back-end\\api_layer\\controllers\\userplaylistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{22E353BC-1852-4905-839C-FFD13F2A7652}|Api_Layer.csproj|solutionrelative:controllers\\userplaylistcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Abdulghani\\AppData\\Local\\Temp\\qafmgrqy..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Abdulghani\\AppData\\Local\\Temp\\qafmgrqy..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Abdulghani\\AppData\\Local\\Temp\\qafmgrqy..sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|ResultFrame"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{5e929736-0e81-4d52-a78e-546a1649faca}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "SQLQuery4.sql ",
+              "DocumentMoniker": "C:\\Users\\Abdulghani\\AppData\\Local\\Temp\\qafmgrqy..sql",
+              "ToolTip": "SQLQuery4.sql *",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-12T23:01:13.04Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "UserPlaylistController.cs",
+              "DocumentMoniker": "E:\\LearnWeb\\ProjectUtemy\\salam-hack-back-end\\Salam-Hack-Back-End\\Api_Layer\\Controllers\\UserPlaylistController.cs",
+              "RelativeDocumentMoniker": "Controllers\\UserPlaylistController.cs",
+              "ToolTip": "E:\\LearnWeb\\ProjectUtemy\\salam-hack-back-end\\Salam-Hack-Back-End\\Api_Layer\\Controllers\\UserPlaylistController.cs*",
+              "RelativeToolTip": "Controllers\\UserPlaylistController.cs*",
+              "ViewState": "AgIAAGIAAAAAAAAAAIA9wIwAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-12T23:11:24.182Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

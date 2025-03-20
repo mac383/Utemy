@@ -1,0 +1,6 @@
+@SalamHachBackEnd_HostAddress = http://localhost:5133
+
+GET {{SalamHachBackEnd_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

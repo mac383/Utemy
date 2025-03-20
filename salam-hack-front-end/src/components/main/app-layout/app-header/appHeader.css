@@ -1,0 +1,227 @@
+.app-header {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  direction: rtl;
+  box-shadow: var(--shadow-sm);
+  background-color: var(--card-bg);
+}
+
+.app-header .header-container {
+  display: grid;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+  position: relative;
+  grid-template-columns: 1fr 10fr;
+}
+
+.app-header .logo-container {
+  display: flex;
+  align-items: center;
+  color: var(--primary-text-color);
+}
+
+.app-header .logo-container span {
+  color: var(--success-color);
+}
+
+.app-header .logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--primary-color);
+  text-decoration: none;
+}
+
+/* Menu toggle button */
+.app-header .menu-toggle {
+  display: none;
+  cursor: pointer;
+  z-index: 20;
+  font-size: 25px;
+}
+
+/* Menu container */
+.app-header .menu-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+.app-header .menu-container.end {
+  justify-content: end;
+}
+
+.app-header .close-header-nav {
+  display: none;
+  text-align: center;
+}
+
+.app-header .nav-menu {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.app-header .nav-menu.hidden {
+  display: none;
+}
+
+.app-header .nav-link {
+  color: var(--primary-text-color);
+  text-decoration: none;
+  font-weight: 500;
+  padding: 0.5rem 10px;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.app-header .nav-link:hover {
+  color: var(--primary-color);
+}
+
+.app-header .nav-link.active {
+  color: var(--primary-color);
+}
+
+.app-header .nav-link.active::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0; /* بدل left لدعم اللغة العربية */
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-color);
+}
+
+.app-header .header-actions {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.app-header .header-actions.hidden {
+  display: none;
+}
+
+.app-header .action-button {
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  color: var(--primary-text-color);
+}
+
+.app-header .action-button:hover {
+  background-color: var(--card-hover);
+}
+
+.app-header .action-button.primary {
+  background-color: var(--primary-color);
+  color: white;
+  border: 1px solid transparent;
+}
+
+.app-header .action-button.primary:hover {
+  background-color: var(--primary-hover);
+}
+
+.app-header .user-avater {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+.app-header .user-avater.hidden {
+  display: none;
+}
+
+/* Media queries */
+@media (max-width: 768px) {
+  .app-header .header-container {
+    display: flex;
+  }
+
+  .app-header .menu-toggle {
+    display: flex;
+  }
+
+  .app-header .menu-container {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 100%;
+    /* max-width: 300px; */
+    height: 100vh;
+    background-color: var(--card-bg);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3rem 2rem 2rem;
+    box-shadow: var(--shadow-lg);
+    transition: right 0.3s ease;
+    z-index: 10;
+    gap: 2rem;
+    overflow-y: auto;
+    flex-direction: column-reverse;
+  }
+
+  .app-header .menu-container.open {
+    right: 0;
+    justify-content: center;
+  }
+
+  .app-header .close-header-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+    gap: 25px;
+  }
+
+  .app-header .nav-menu {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 5px;
+  }
+
+  .app-header .nav-link {
+    display: block;
+    padding: 0.75rem 0;
+    font-size: 1.1rem;
+    width: 60%;
+    text-align: center;
+  }
+
+  .app-header .header-actions {
+    flex-direction: column;
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .app-header .action-button {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 0.5rem;
+  }
+
+  .app-header .user-avater {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}

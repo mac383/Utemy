@@ -1,0 +1,272 @@
+/* button.css */
+
+.button {
+  font-family: inherit;
+  border: none;
+  padding: 10px 16px;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  position: relative;
+  outline: none;
+  font-weight: 500;
+  letter-spacing: 0.01em;
+  border-radius: 8px;
+  gap: 8px;
+  overflow: hidden;
+}
+
+/* أنواع الأزرار باستخدام المتغيرات */
+.button.button-primary {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.button-primary .button-spinner {
+  color: white;
+}
+
+.button.button-secondary {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.button-secondary .button-spinner {
+  color: white;
+}
+
+.button.button-success {
+  background-color: var(--success-color);
+  color: white;
+}
+
+.button-success .button-spinner {
+  color: white;
+}
+
+.button.button-danger {
+  background-color: var(--error-color);
+  color: white;
+}
+
+.button-danger .button-spinner {
+  color: white;
+}
+
+.button.button-warning {
+  background-color: var(--warning-color);
+  color: white;
+}
+
+.button-warning .button-spinner {
+  color: white;
+}
+
+.button.button-info {
+  background-color: var(--info-color);
+  color: white;
+}
+
+.button-info .button-spinner {
+  color: white;
+}
+
+.button.button-light {
+  background-color: var(--card-bg);
+  color: var(--primary-text-color);
+  border: 1px solid var(--border-color);
+}
+
+.button-light .button-spinner {
+  color: var(--primary-text-color);
+}
+
+.button.button-dark {
+  background-color: var(--primary-text-color);
+  color: white;
+}
+
+.button-dark .button-spinner {
+  color: white;
+}
+
+.button.button-outline {
+  background-color: transparent;
+  border: 1.5px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.button-outline .button-spinner {
+  color: var(--primary-color);
+}
+
+.button.button-link {
+  background-color: transparent;
+  color: var(--primary-color);
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.button-link .button-spinner {
+  color: var(--primary-color);
+}
+
+.button.button-glass {
+  background-color: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: var(--primary-text-color);
+}
+
+.button-glass .button-spinner {
+  color: var(--primary-text-color);
+}
+
+/* .button.button-loading .button-spinner {
+  color: var(--primary-text-color);
+} */
+
+/* أحجام الأزرار */
+.button.button-small {
+  padding: 6px 12px;
+  font-size: 12px;
+  height: 32px;
+  border-radius: 6px;
+}
+
+.button.button-medium {
+  padding: 8px 16px;
+  font-size: 14px;
+  height: 40px;
+  border-radius: 8px;
+}
+
+.button.button-large {
+  padding: 10px 20px;
+  font-size: 16px;
+  height: 48px;
+  border-radius: 10px;
+}
+
+/* حواف مستديرة */
+.button.button-rounded {
+  border-radius: 50px;
+}
+
+/* عرض كامل */
+.button.button-full-width {
+  width: 100%;
+  display: flex;
+}
+
+/* تعطيل الزر */
+.button.button-disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+/* زر مع ظل */
+.button.button-elevated {
+  box-shadow: var(--shadow-sm);
+}
+
+.button.button-elevated:hover:not(.button-disabled) {
+  box-shadow: var(--shadow-md);
+  transform: translateY(-1px);
+}
+
+/* تأثيرات التحويم (hover) */
+.button:not(.button-disabled):hover {
+  filter: brightness(95%);
+}
+
+.button.button-primary:not(.button-disabled):hover {
+  background-color: var(--primary-hover);
+  filter: none;
+}
+
+.button:not(.button-disabled):active {
+  transform: translateY(1px);
+  box-shadow: none;
+}
+
+.button.button-outline:not(.button-disabled):hover {
+  background-color: var(--primary-light);
+}
+
+.button.button-link:not(.button-disabled):hover {
+  background-color: rgba(37, 99, 235, 0.05);
+  text-decoration: none;
+}
+
+.button.button-glass:not(.button-disabled):hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* أيقونات الزر */
+.button .button-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2em;
+  height: 1em;
+  width: 1em;
+}
+
+.button .button-icon-start {
+  margin-right: 4px;
+}
+
+.button .button-icon-end {
+  margin-left: 4px;
+}
+
+/* أنيميشن التحميل */
+.button.button-loading {
+  position: relative;
+  color: transparent !important;
+}
+
+.button.button-loading .button-text {
+  visibility: hidden;
+}
+
+.button .button-spinner {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border: 2px solid currentColor;
+  border-radius: 50%;
+  border-right-color: transparent;
+  display: inline-block;
+  animation: button-spin 0.75s linear infinite;
+}
+
+@keyframes button-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* تأثير موجة (ripple effect) */
+.button::after {
+  content: "";
+  position: absolute;
+  background: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  transform: scale(0);
+  pointer-events: none;
+  opacity: 1;
+  transition: transform 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.button:active:not(.button-disabled)::after {
+  transform: scale(3);
+  opacity: 0;
+}

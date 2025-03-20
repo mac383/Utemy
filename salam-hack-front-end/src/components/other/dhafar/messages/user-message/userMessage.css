@@ -1,0 +1,80 @@
+.user-message-component {
+  width: 100%;
+  height: fit-content;
+  padding: 25px;
+  border-radius: 10px;
+  display: grid;
+  grid-template-columns: 50px 10fr;
+  gap: 25px;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+}
+
+.user-message-component .img-container {
+  width: 100%;
+  display: flex;
+  align-items: start;
+  justify-content: start;
+}
+
+.user-message-component .img-container img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 5px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--primary-light);
+}
+
+.user-message-component .img-container .no-user-image {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--input-bg-color);
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid var(--input-border-color);
+}
+
+.user-message-component .img-container .no-user-image .user-imaeg {
+  object-fit: contain;
+  background-color: var(--card-bg);
+}
+
+.user-message-component .request-content {
+  width: 100%;
+  letter-spacing: 1px;
+  display: flex;
+  align-items: center;
+  font-family: inherit;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+  color: var(--primary-text-color);
+}
+
+@media (max-width: 750px) {
+  .user-message-component {
+    padding: 15px;
+    border-radius: 10px;
+    display: grid;
+    grid-template-columns: 40px 10fr;
+    gap: 15px;
+  }
+
+  .user-message-component .img-container img {
+    width: 40px;
+    height: 40px;
+  }
+
+  .user-message-component .img-container .no-user-image {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (min-width: 901px) {
+  /* يمكن إضافة تنسيقات أخرى هنا حسب الحاجة */
+}

@@ -1,0 +1,78 @@
+/* الحاوية الرئيسية */
+.open-text-container {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* عنوان القسم */
+.open-text-title {
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 22px;
+}
+
+/* حاوية السؤال */
+.question-container {
+  margin-bottom: 20px;
+}
+
+/* نص السؤال */
+.question-text {
+  color: var(--primary-text-color);
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+
+/* مربع النص للإجابة */
+.answer-textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 16px;
+  color: var(--primary-text-color);
+  background-color: var(--input-bg-color);
+  resize: vertical;
+  min-height: 150px;
+  transition: border-color 0.3s ease;
+}
+
+.answer-textarea:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.answer-textarea::placeholder {
+  color: var(--text-light);
+}
+
+/* زر التالي */
+.next-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  display: block;
+  margin: 20px auto 0;
+  transition: background-color 0.3s ease;
+}
+
+.next-button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* رسالة الخطأ */
+.error-message {
+  color: var(--error-color);
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}

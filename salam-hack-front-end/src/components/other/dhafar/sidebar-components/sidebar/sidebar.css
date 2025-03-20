@@ -1,0 +1,117 @@
+.sidebar-component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  background-color: var(--bg-color);
+  z-index: 5;
+}
+
+.sidebar-component .sidebar-header {
+  width: 100%;
+  min-height: 120px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.sidebar-component .sidebar-header img {
+  width: 50px;
+  height: 50px;
+  object-fit: fill;
+  border-radius: 5px;
+}
+
+.sidebar-component .sidebar-header h2 {
+  font-size: 34px;
+  letter-spacing: 2px;
+  color: var(--primary-text-color);
+}
+
+.sidebar-component .sidebar-body {
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  overflow-y: auto;
+}
+
+.sidebar-component .sidebar-body .sidebar-settings-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin: 10px auto 15px;
+}
+
+.sidebar-component .sidebar-btn {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  font-weight: 500;
+  gap: 10px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: all 0.3s ease;
+  border: 1px solid var(--border-color);
+  background-color: inherit;
+}
+
+.sidebar-component .sidebar-btn:hover {
+  background-color: var(--card-bg);
+}
+
+.sidebar-component .sidebar-btn.hide {
+  display: none;
+}
+
+.sidebar-component .sidebar-btn.new-chat {
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+}
+
+.sidebar-component .sidebar-btn.new-chat:hover {
+  background-color: var(--secondary-color);
+}
+
+.sidebar-component .sidebar-body .conversations-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  gap: 7px;
+}
+
+.sidebar-component .sidebar-body .conversations-container .label {
+  width: 100%;
+  padding-right: 5px;
+  font-size: 14px;
+  letter-spacing: 1px;
+  color: var(--input-text-color);
+}
+
+.sidebar-component .sidebar-body .conversations-container .no-conversations {
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  font-weight: 500;
+  color: var(--text-light);
+}
+
+::-webkit-scrollbar {
+  width: 2px;
+}

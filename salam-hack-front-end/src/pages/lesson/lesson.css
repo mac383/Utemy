@@ -1,0 +1,422 @@
+.lesson-container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-color);
+  color: var(--primary-text-color);
+}
+
+/* شريط العنوان */
+.lesson-container .lesson-header {
+  display: flex;
+  align-items: center;
+  padding: 1rem;
+  background-color: var(--card-bg);
+  border-bottom: 1px solid var(--border-color);
+  box-shadow: var(--shadow-sm);
+  gap: 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.lesson-container .lesson-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin: 0;
+  flex-grow: 1;
+}
+
+.lesson-container .lesson-number {
+  color: var(--secondary-text-color);
+  font-size: 0.875rem;
+  margin-right: 0.5rem;
+}
+
+/* تصميم زر القائمة الجانبية */
+.lesson-container .sidebar-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 24px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.lesson-container .sidebar-toggle span {
+  width: 100%;
+  height: 2px;
+  background-color: var(--primary-text-color);
+  transition: all 0.3s ease;
+}
+
+/* محتوى الدرس */
+.lesson-container .lesson-content-wrapper {
+  display: flex;
+  flex: 1;
+  overflow: hidden;
+}
+
+/* القائمة الجانبية */
+.lesson-container .lesson-sidebar {
+  width: 300px;
+  background-color: var(--card-bg);
+  border-left: 1px solid var(--border-color);
+  box-shadow: var(--shadow);
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+}
+
+.lesson-container .sidebar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.lesson-container .sidebar-header h3 {
+  margin: 0;
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+.lesson-container .close-sidebar {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  color: var(--primary-text-color);
+}
+
+.lesson-container .lessons-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.lesson-container .lesson-item {
+  display: flex;
+  align-items: center;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--divider-color);
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.lesson-container .lesson-item:hover {
+  background-color: var(--card-hover);
+}
+
+.lesson-container .lesson-item.active {
+  background-color: var(--primary-light);
+  position: relative;
+}
+
+.lesson-container .lesson-item.active::before {
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background-color: var(--primary-color);
+}
+
+.lesson-container .lesson-status {
+  margin-left: 0.75rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+}
+
+.lesson-container .completed-indicator {
+  color: var(--success-color);
+  font-weight: bold;
+}
+
+.lesson-container .lesson-item-title {
+  font-size: 0.875rem;
+  line-height: 1.4;
+  flex: 1;
+}
+
+.lesson-container .lesson-item.completed .lesson-item-title {
+  color: var(--secondary-text-color);
+}
+
+/* محتوى الدرس الرئيسي */
+.lesson-container .lesson-content {
+  flex: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+/* فيديو الدرس */
+.lesson-container .lesson-video-container {
+  position: relative;
+  padding-bottom: 56.25%; /* نسبة العرض للارتفاع 16:9 */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+  margin-bottom: 1.5rem;
+}
+
+.lesson-container .lesson-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+
+/* أزرار الإجراءات */
+.lesson-container .lesson-actions {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.lesson-container .btn {
+  padding: 0.75rem 1.25rem;
+  border-radius: 6px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 0.9rem;
+}
+
+.lesson-container .complete-btn {
+  background-color: var(--primary-color);
+  color: white;
+  flex: 1;
+}
+
+.lesson-container .complete-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.lesson-container .complete-btn.completed {
+  background-color: var(--success-color);
+}
+
+.lesson-container .quiz-btn {
+  background-color: var(--secondary-color);
+  color: white;
+}
+
+.lesson-container .quiz-btn:hover {
+  opacity: 0.9;
+}
+
+/* قسم الملاحظات */
+.lesson-container .lesson-notes-section {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.lesson-container .lesson-notes-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.lesson-container .lesson-notes-textarea {
+  width: 100%;
+  min-height: 150px;
+  padding: 0.75rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 6px;
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  font-family: inherit;
+  resize: vertical;
+  margin-bottom: 1rem;
+  transition: border 0.2s ease;
+}
+
+.lesson-container .lesson-notes-textarea:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+}
+
+.lesson-container .save-note-btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+
+.lesson-container .save-note-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+/* قسم المرفقات */
+.lesson-container .lesson-attachments-section {
+  background-color: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: 8px;
+  box-shadow: var(--shadow);
+}
+
+.lesson-container .lesson-attachments-section h3 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.125rem;
+}
+
+.lesson-container .attachment-input-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.lesson-container .attachment-input {
+  padding: 0.75rem;
+  border: 1px solid var(--input-border-color);
+  border-radius: 6px;
+  background-color: var(--input-bg-color);
+  color: var(--input-text-color);
+  transition: border 0.2s ease;
+}
+
+.lesson-container .attachment-input:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+}
+
+.lesson-container .save-attachment-btn {
+  background-color: var(--primary-color);
+  color: white;
+  align-self: flex-start;
+}
+
+.lesson-container .save-attachment-btn:hover {
+  background-color: var(--primary-hover);
+}
+
+.lesson-container .current-attachment {
+  margin-top: 1.5rem;
+  padding: 1rem;
+  background-color: var(--input-bg-color);
+  border-radius: 6px;
+}
+
+.lesson-container .current-attachment h4 {
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 0.9rem;
+  color: var(--secondary-text-color);
+}
+
+.lesson-container .attachment-link {
+  display: inline-block;
+  color: var(--primary-color);
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.lesson-container .attachment-link:hover {
+  text-decoration: underline;
+}
+
+/* رسالة التحميل */
+.lesson-container .lesson-loading {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.lesson-container .loader {
+  border: 4px solid var(--border-color);
+  border-top: 4px solid var(--primary-color);
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 1rem;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* التصميم المستجيب للشاشات الصغيرة */
+@media (max-width: 992px) {
+  .lesson-container .lesson-content-wrapper {
+    flex-direction: column;
+    overflow: visible;
+  }
+  
+  .lesson-container .lesson-sidebar {
+    width: 100%;
+    border-left: none;
+    border-bottom: 1px solid var(--border-color);
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 20;
+    transform: translateX(100%);
+    margin-top: 70px;
+  }
+  
+  .lesson-container .lesson-sidebar.open {
+    transform: translateX(0);
+  }
+  
+  .lesson-container .sidebar-toggle {
+    display: flex;
+  }
+  
+  .lesson-container .close-sidebar {
+    display: block;
+  }
+  
+  .lesson-container .lesson-content {
+    padding: 1rem;
+  }
+  
+  .lesson-container .lesson-actions {
+    flex-direction: column;
+  }
+  
+  .lesson-container .btn {
+    width: 100%;
+  }
+  
+  .lesson-container .lesson-notes-textarea {
+    min-height: 120px;
+  }
+}
+
+@media (max-width: 576px) {
+  .lesson-container .lesson-header {
+    padding: 0.75rem;
+  }
+  
+  .lesson-container .lesson-title {
+    font-size: 1rem;
+  }
+  
+  .lesson-container .lesson-notes-section,
+  .lesson-container .lesson-attachments-section {
+    padding: 1rem;
+  }
+}

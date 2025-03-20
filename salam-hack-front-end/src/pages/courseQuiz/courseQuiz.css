@@ -1,0 +1,60 @@
+/* أنماط عامة */
+.course-quiz-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  border-radius: 10px;
+  box-shadow: var(--shadow);
+}
+
+.course-quiz-title {
+  color: var(--primary-text-color);
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 24px;
+}
+
+/* حالة التحميل */
+.loading-state {
+  text-align: center;
+  font-size: 18px;
+  color: var(--secondary-text-color);
+  padding: 20px;
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+}
+
+/* قسم الأسئلة */
+.quiz-section {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.quiz-section-message {
+  color: var(--secondary-text-color);
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+/* زر الانتقال */
+.quiz-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.quiz-button:hover {
+  background-color: var(--primary-hover);
+}

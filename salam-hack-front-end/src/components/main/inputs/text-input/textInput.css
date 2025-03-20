@@ -1,0 +1,64 @@
+.text-input-component {
+  width: 100%;
+  height: 100%;
+}
+
+.input-box {
+  width: 100%;
+  position: relative;
+}
+
+.text-input-component .input {
+  width: 100%;
+  padding: 10px;
+  padding-top: 25px;
+  color: var(--primary-text-color);
+  border: 1px solid var(--input-border-color);
+  background-color: var(--input-bg-color);
+  border-radius: 3px;
+  outline: none;
+  font-size: 14px;
+  font-family: Nfont, Dfont;
+  appearance: none;
+}
+
+.text-input-component .input:focus {
+  outline: none;
+  border-color: var(--input-focus-border);
+  box-shadow: 0 0 0 3px var(--primary-light);
+}
+
+.text-input-component .input.ltr {
+  direction: ltr;
+}
+
+.text-input-component .input-title {
+  position: absolute;
+  right: 0;
+  padding: 10px;
+  padding-top: 13px;
+  pointer-events: none;
+  color: var(--primary-text-color);
+  transition: 0.3s;
+}
+
+.text-input-component .input:valid ~ .input-title,
+.text-input-component .input:focus ~ .input-title {
+  color: var(--secondary-text-color);
+  transform: translateX(2px) translateY(2px);
+  font-size: 14px;
+  padding: 0 10px;
+  background-color: inherit;
+}
+
+.text-input-component .error-label {
+  color: var(--error-color);
+  font-size: 12px;
+  font-weight: bold;
+  padding-right: 5px;
+  display: none;
+}
+
+.text-input-component .error-label.visible {
+  display: flex;
+}

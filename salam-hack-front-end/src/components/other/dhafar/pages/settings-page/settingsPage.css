@@ -1,0 +1,200 @@
+.settings-page-component {
+  width: 100%;
+  height: 100%;
+  padding: 30px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+  overflow-y: auto;
+  background-color: var(--bg-color);
+}
+
+.settings-title {
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.message-container {
+  width: 100%;
+  max-width: 800px;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.welcome-message {
+  font-size: 1.1rem;
+  line-height: 1.5;
+  text-align: center;
+  margin-bottom: 20px;
+  color: var(--primary-text-color);
+}
+
+.examples {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 8px;
+  margin: 15px auto;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--card-bg);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+}
+
+.example-title {
+  font-weight: 600;
+  margin-bottom: 5px;
+  width: 100%;
+  text-align: center;
+  color: var(--secondary-text-color);
+  font-size: 1rem;
+}
+
+.example {
+  font-size: 0.95rem;
+  color: var(--primary-text-color);
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: rgba(0, 0, 0, 0.03);
+  width: 100%;
+}
+
+.settings-form {
+  width: 100%;
+  max-width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.label-container {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5px;
+}
+
+.form-label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--secondary-text-color);
+}
+
+.chars {
+  font-size: 0.85rem;
+  color: var(--primary-text-color);
+  opacity: 0.8;
+}
+
+.form-input {
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid var(--input-border-color);
+  border-radius: 8px;
+  resize: none;
+  min-height: 180px;
+  color: var(--input-text-color);
+  background-color: var(--input-bg-color);
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(var(--primary-color-rgb), 0.2);
+}
+
+.save-button {
+  width: 100%;
+  padding: 12px 15px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.save-button:hover {
+  background-color: var(--secondary-color);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+}
+
+.save-button:active {
+  transform: translateY(0);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+@media (max-width: 750px) {
+  .settings-page-component {
+    padding: 20px 10px;
+  }
+  
+  .settings-title {
+    font-size: 24px;
+  }
+  
+  .welcome-message {
+    font-size: 1rem;
+  }
+  
+  .examples {
+    padding: 15px;
+    width: 100%;
+  }
+  
+  .example {
+    font-size: 0.9rem;
+  }
+  
+  .form-input {
+    padding: 12px;
+    font-size: 15px;
+    min-height: 150px;
+  }
+  
+  .save-button {
+    padding: 10px;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 900px) {
+  .settings-title {
+    font-size: 26px;
+  }
+  
+  .examples {
+    max-width: 650px;
+  }
+}
+
+@media (min-width: 901px) {
+  .settings-form, 
+  .message-container {
+    max-width: 750px;
+  }
+  
+  .form-input {
+    min-height: 200px;
+  }
+}

@@ -1,0 +1,310 @@
+.ai-study-helper {
+  background-color: var(--card-bg);
+  border-radius: 12px;
+  box-shadow: var(--shadow);
+  padding: 20px;
+  margin: 20px 0;
+  direction: rtl;
+  font-family: 'Tajawal', sans-serif;
+  color: var(--primary-text-color);
+}
+
+/* إشعار الذكاء الاصطناعي */
+.ai-disclaimer {
+  background-color: var(--primary-light);
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 20px;
+}
+
+.ai-disclaimer-content {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.ai-icon {
+  font-size: 24px;
+  flex-shrink: 0;
+}
+
+.ai-message {
+  flex-grow: 1;
+  font-size: 14px;
+  color: var(--primary-text-color);
+}
+
+.ai-disclaimer-close {
+  background: none;
+  border: none;
+  font-size: 20px;
+  color: var(--secondary-text-color);
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s ease;
+}
+
+.ai-disclaimer-close:hover {
+  color: var(--primary-text-color);
+}
+
+/* رأس الدرس */
+.ai-study-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  padding-bottom: 12px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.ai-study-header h2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin: 0;
+  color: var(--primary-color);
+}
+
+.reload-button {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  color: var(--secondary-text-color);
+}
+
+.reload-button:hover {
+  background-color: var(--card-hover);
+  color: var(--primary-color);
+  transform: rotate(30deg);
+}
+
+/* حالة التحميل */
+.loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+  gap: 16px;
+}
+
+.loading-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--primary-light);
+  border-radius: 50%;
+  border-top: 3px solid var(--primary-color);
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* حالة الخطأ */
+.error-container {
+  background-color: rgba(239, 68, 68, 0.1);
+  border-radius: 8px;
+  padding: 16px;
+  margin: 20px 0;
+  text-align: center;
+}
+
+.retry-button {
+  background-color: var(--error-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 12px;
+}
+
+.retry-button:hover {
+  background-color: #dc2626;
+}
+
+/* عندما لا يوجد محتوى */
+.no-content {
+  text-align: center;
+  padding: 40px 0;
+  color: var(--secondary-text-color);
+}
+
+.primary-button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 10px 20px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+  margin-top: 16px;
+}
+
+.primary-button:hover {
+  background-color: var(--primary-hover);
+}
+
+/* محتوى الشرح */
+.explanation-content {
+  line-height: 1.6;
+}
+
+/* تنسيق العناوين */
+.ai-heading-1 {
+  font-size: 24px;
+  font-weight: 700;
+  margin-top: 32px;
+  margin-bottom: 16px;
+  color: var(--primary-text-color);
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--divider-color);
+}
+
+.ai-heading-2 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 28px;
+  margin-bottom: 14px;
+  color: var(--primary-color);
+}
+
+.ai-heading-3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 24px;
+  margin-bottom: 12px;
+  color: var(--primary-text-color);
+}
+
+/* تنسيق الأكواد البرمجية */
+.inline-code {
+  background-color: var(--input-bg-color);
+  border-radius: 4px;
+  padding: 2px 4px;
+  font-family: 'Consolas', 'Monaco', monospace;
+  color: var(--primary-color);
+  direction: ltr;
+  display: inline-block;
+}
+
+.code-container {
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  margin: 16px 0;
+  border: 1px solid var(--border-color);
+  overflow: hidden;
+}
+
+.code-block {
+  padding: 16px;
+  margin: 0;
+  overflow-x: auto;
+  direction: ltr;
+  font-family: 'Consolas', 'Monaco', monospace;
+  font-size: 14px;
+  line-height: 1.5;
+  color: #374151;
+  text-align: left;
+}
+
+/* تنسيق الجداول */
+.ai-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+  font-size: 14px;
+}
+
+.ai-table th {
+  background-color: var(--primary-light);
+  color: var(--primary-text-color);
+  font-weight: 600;
+  text-align: right;
+  padding: 12px;
+  border: 1px solid var(--border-color);
+}
+
+.ai-table td {
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+}
+
+.ai-table tr:nth-child(even) {
+  background-color: var(--card-hover);
+}
+
+/* تنسيق القوائم */
+.ai-list, .ai-ordered-list {
+  padding-right: 20px;
+  margin: 16px 0;
+}
+
+.ai-list li, .ai-ordered-list li {
+  margin-bottom: 8px;
+}
+
+/* تنسيق الاقتباسات */
+.ai-blockquote {
+  background-color: var(--bg-color);
+  border-right: 4px solid var(--primary-color);
+  padding: 12px 16px;
+  margin: 20px 0;
+  font-style: italic;
+  color: var(--secondary-text-color);
+}
+
+/* تنسيق المعادلات الرياضية */
+.katex-display {
+  direction: ltr;
+  overflow-x: auto;
+  padding: 10px 0;
+}
+
+.katex {
+  direction: ltr;
+  display: inline-block;
+}
+
+/* تنسيقات استجابية */
+@media (max-width: 768px) {
+  .ai-study-helper {
+    padding: 16px;
+    margin: 16px 0;
+  }
+  
+  .ai-study-header h2 {
+    font-size: 18px;
+  }
+  
+  .ai-heading-1 {
+    font-size: 20px;
+  }
+  
+  .ai-heading-2 {
+    font-size: 18px;
+  }
+  
+  .ai-heading-3 {
+    font-size: 16px;
+  }
+}

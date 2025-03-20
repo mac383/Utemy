@@ -1,0 +1,20 @@
+.checkbox-component {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.checkbox-input {
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.checkbox-title {
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  color: var(--secondary-text-color);
+}

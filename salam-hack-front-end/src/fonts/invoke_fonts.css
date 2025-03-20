@@ -1,0 +1,63 @@
+/* arabic fonts */
+
+@font-face {
+  font-family: Dfont;
+  src: url('./arabic/DINNextLTArabic-UltraLight-4.ttf');
+  font-weight: 200; /* Ultra Light */
+}
+
+@font-face {
+  font-family: Dfont;
+  src: url('./arabic/DINNEXTLTARABIC-LIGHT-2-2.ttf');
+  font-weight: 300; /* Light */
+}
+
+@font-face {
+  font-family: Dfont;
+  src: url('./arabic/DINNextLTArabic-Regular-4.ttf');
+  font-weight: 400; /* Regular */
+}
+
+@font-face {
+  font-family: Dfont;
+  src: url('./arabic/DINNextLTArabic-Medium-4.ttf');
+  font-weight: 500; /* Medium */
+}
+
+@font-face {
+  font-family: Dfont;
+  src: url('./arabic/DINNextLTArabic-Bold-4.ttf');
+  font-weight: 700; /* Bold */
+}
+
+/* english fonts */
+
+@font-face {
+  font-family: Nfont;
+  src: url('./english/Nunito-ExtraLight.ttf');
+  font-weight: 200; /* Extra Light */
+}
+
+@font-face {
+  font-family: Nfont;
+  src: url('./english/Nunito-Light.ttf');
+  font-weight: 300; /* Light */
+}
+
+@font-face {
+  font-family: Nfont;
+  src: url('./english/Nunito-Regular.ttf');
+  font-weight: 400; /* Regular */
+}
+
+@font-face {
+  font-family: Nfont;
+  src: url('./english/Nunito-Medium.ttf');
+  font-weight: 500; /* Medium */
+}
+
+@font-face {
+  font-family: Nfont;
+  src: url('./english/Nunito-Bold.ttf');
+  font-weight: 700; /* Bold */
+}

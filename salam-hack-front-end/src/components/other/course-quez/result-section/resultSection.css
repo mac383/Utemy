@@ -1,0 +1,48 @@
+/* الحاوية الرئيسية */
+.result-container {
+  background-color: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: var(--shadow-sm);
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* عنوان النتيجة */
+.result-title {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* تفاصيل النتيجة */
+.result-details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* عنصر النتيجة */
+.result-item {
+  color: var(--secondary-text-color);
+  font-size: 18px;
+  margin: 0;
+}
+
+.result-item span {
+  color: var(--primary-text-color);
+  font-weight: bold;
+}
+
+/* المجموع الكلي */
+.result-total {
+  color: var(--success-color);
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 20px;
+}
+
+.result-total span {
+  color: var(--success-color);
+}
